@@ -32,6 +32,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Checkout
+      - name: Test and Package
         run: mvn package war:war
         
