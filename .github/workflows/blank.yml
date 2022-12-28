@@ -33,5 +33,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Test and Package
-        run: mvn package war:war
+        run: |
+            mvn install
+            mvn package war:war
         
