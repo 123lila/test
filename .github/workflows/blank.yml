@@ -37,7 +37,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Test and Package
-        run: 
-            mvn package war:war
+      - name: Get current pom version
+        uses: CptMokoena/maven-get-version-action@1.0.3
         
